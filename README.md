@@ -21,13 +21,13 @@ How to install:
   3. The WebsocketWatcherListner.cfc file is the file that will contain your CFML logic.  Make a copy of this file and customize it to do what you want.  The default will log incoming messages to a log file, and will broadcast the incoming messages to the channel if it contains the word "echo". 
   4. Edit the web.xml located in {rail-web}/WEB-INF/ to include the following lines :
   
-  
-    <listener>
-       <listener-class>
-          com.quetwo.wsRailoEndpoint.wsEndpointLoader
-       </listener-class>
-    </listener>
-  
+```  
+  <listener>
+    <listener-class>
+      com.quetwo.wsRailoEndpoint.wsEndpointLoader
+    </listener-class>
+  </listener>
+```  
   
 Restart Railo.  Once it has been restarted, you can add the new Event Gateway and start filtering channels.
   
